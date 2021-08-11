@@ -1,5 +1,14 @@
 {
     "baseUrl": "https://www.amazon.com",
     "video": false,
-    "screenshotOnRunFailure": false
+    "screenshotOnRunFailure": false,
+
+    "reporter": "cypress-mochawesome-reporter",
+    "reporterOptions": {
+        "reportDir": "reports",
+        "charts": true,
+        "reportPageTitle": "Test Suite",
+        "embeddedScreenshots": true,
+        "inlineAssets": true
+    }
 }
